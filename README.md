@@ -23,4 +23,4 @@ npm run lint
 ### Customize configuration
 
 ### demo
-https://github.com/JayRingKong/vue-manage/blob/master/demo_photo/home.jpg
+https://github.com/JayRingKong/vue-manage/row/master/demo_photo/home.jpg
