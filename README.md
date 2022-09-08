@@ -21,6 +21,7 @@ npm run lint
 ```
 
 ### Customize configuration
+```
 
 ### demo
-https://github.com/JayRingKong/vue-manage/raw/master/demo_photo/home.jpg
+![Image](https://github.com/JayRingKong/vue-manage/blob/master/demo_photo/home.jpg)
