@@ -16,7 +16,7 @@
         </div>
       </el-card>
       <!-- 左边下列表 -->
-      <el-card style="margin-top: 20px; height: 400px">
+      <el-card style="margin-top: 20px; height: 410px">
         <el-table :data="tableData">
           <el-table-column
             v-for="(val, key) in tableLabel"
@@ -48,16 +48,16 @@
         </el-card>
       </div>
       <!-- //右边中间 -->
-      <el-card style="height: 280px; margin-bottom: 10px">
-        <div style="height: 280px" ref="echarts"></div>
+      <el-card style="height: 240px; margin-bottom: 10px">
+        <div style="height: 240px" ref="echarts"></div>
       </el-card>
       <!-- 右边下方 -->
       <div class="graph" style="display: flex; justify-content: space-between">
         <el-card >
-          <div style="height:240px" ref="userEcharts"></div>
+          <div style="height:220px;weight:100%" ref="userEcharts"></div>
         </el-card>
         <el-card >
-          <div  style="height:240px" ref="videoEcharts"></div>
+          <div  style="height:220px;weight:100%" ref="videoEcharts"></div>
         </el-card>
       </div>
     </el-col>
@@ -125,7 +125,7 @@ export default {
       if (code === 20000) {
         this.tableData = data.tableData;
         const order = data.orderData;
-        console.log('AA',data.videoData);
+        // console.log('AA',data.videoData);
         const xData = order.date;
         const keyArray = Object.keys(order.data[0]);
         const series = [];
@@ -227,7 +227,7 @@ export default {
         V.setOption(videoOption)
       }
 
-      console.log(res);
+      // console.log(res);
     });
   },
 };
